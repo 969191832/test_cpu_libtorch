@@ -1,0 +1,11 @@
+# root path
+wget https://download.pytorch.org/libtorch/cpu/libtorch-shared-with-deps-latest.zip -O libtorch.zip
+unzip libtorch.zip
+cd libtorch
+pwd  ## ----> path 
+
+cd build
+# path绝对路径
+cmake -DCMAKE_PREFIX_PATH=/home/.../test_cpu_libtorch/libtorch ../Digit-Recognition-MNIST-SVHN-PyTorch-CPP/
+make
+./example
